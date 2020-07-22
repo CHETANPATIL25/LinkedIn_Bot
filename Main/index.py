@@ -1,6 +1,6 @@
 import os
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWaitz
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -20,7 +20,7 @@ signin = driver.find_element_by_xpath("/html/body/nav/a[3]")
 signin.click()
 
 #waits for some time 
-driver.implicitly_wait(40)
+driver.implicitly_wait(50)
 
 username = driver.find_element_by_xpath('//*[@id="username"]')
 # enter phone/email
